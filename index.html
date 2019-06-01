@@ -10,14 +10,114 @@
     <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-database.js"></script>
     <!-- JQUERY -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
     
+<div class= "Container"></div>
+<div class="jumbotron">
+    <h1 class= "text-center">Employee Data Management</h1>
+    <h2 class= "text-center">A comprehensive Directory of Employee billable hours</h2>
+</div>
 
+<div class="container">
+    <div class="row">
+        <div class="col">
+            Employer Name
+        </div>
+        <div class="col">
+            Role
+        </div>
+        <div class="col">
+            Start Date
+        </div>
+        <div class="col">
+            Months Worked
+        </div>
+        <div class="col">
+            Monthly Rate
+        </div>
+        <div class="col">
+            Total Billed
+        </div>
+    </div>
+
+    <!-- <div class="col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Most recent member</h3>
+            </div>
+            <div class="panel-body">
+                <h2 id="nameDisplay"></h2>
+                <h2 id="emailDisplay"></h2>
+                <h2 id="ageDisplay"></h2>
+                <h2 id="commentDisplay"></h2>
+            </div>
+        </div>
+    </div> -->
+    <div class="row">
+        <div class="col">
+            <h2 id="employerDisplay"></h2>
+            1 of 6
+        </div>
+        <div class="col">
+            <h2 class="roleDisplay"></h2>
+            2 of 6
+        </div>
+        <div class="col">
+            <h2 class="startDisplay"></h2>
+            3 of 6
+        </div>
+        <div class="col">
+            <h2 class="monthsDisplay"></h2>
+            4 of 6
+        </div>
+        <div class="col">
+            <h2 class="monthlyDisplay"></h2>
+            5 of 6
+        </div>
+        <div class="col">
+            <h2 class="totalDisplay"></h2>
+            6 of 6
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Add Employee</h3>
+            </div>
+            <div class="panel-body">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="text">Employer Name: </label>
+                        <input type="text" class="form-control" id="employerNameInput">
+                    </div>
+                    <div class="form-group">
+                        <label for="text"> Role: </label>
+                        <input type="text" class="form-control" id="roleInput">
+                    </div>
+                    <div class="form-group">
+                        <label for="text">Start Date: </label>
+                        <input type="date" class="form-control" id="startDateInput">
+                    </div>
+                    <div class="form-group">
+                        <label for="text">Monthly rate: </label>
+                        <input type="number" class="form-control" id="monthlyRateInput">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" id="addUser">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
 <script type="text/javascript" src="app.js"></script>
     
