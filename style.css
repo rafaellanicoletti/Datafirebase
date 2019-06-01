@@ -5,5 +5,13 @@
 
 h1,h2 {
     color: white;
+    font-size: 25px;
 }
 
+h3{
+    font-size: 15px;
+}
+
+#panel-body{
+    font-size: 25px;
+}

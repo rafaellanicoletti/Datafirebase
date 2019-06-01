@@ -23,11 +23,12 @@ $("#addUser").on("click",function(){
     date = $("#startDateInput").val().trim();
     monthlyRate = $("#monthlyRateInput").val().trim();
 
-    firebase.database().ref().set({
+    firebase.database().ref().push({
         employer:employer,
         role:role,
         date:date,
         monthlyRate:monthlyRate,
+        dateAdded: firebase.database.ServerValue.TIMESTAMP
     })
 
 })
